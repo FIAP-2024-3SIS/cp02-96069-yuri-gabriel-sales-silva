@@ -9,9 +9,15 @@ import { Animal } from '../models/animal';
   styleUrl: './animal-item.component.css'
 })
 export class AnimalItemComponent {
-/**
- *
- */
 
-@Input() animal: Animal = new Animal("", "", 0, "");
+  /**
+   *
+   */
+  constructor() {
+    // this.animal =
+    //       new Animal("Mingau", "Felino",
+    //                 18, "macho");
+  }
+
+  @Input() animal: Animal = new Animal("", "", 0, "");
 }

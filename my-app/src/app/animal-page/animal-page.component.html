@@ -1,6 +1,5 @@
-<p>animal-page works!</p>
-
-<div **ngFor="let animal of animals">
+<div *ngFor="let animal of animals" [ngStyle]="{ 'background-color': animal.sexo === 'macho' ? 'blue' : 'pink' }">
   <app-animal-item [animal]="animal">
   </app-animal-item>
 </div>
+
